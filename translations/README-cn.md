@@ -476,7 +476,7 @@
 
 - ### 数组（Arrays）
     - 实现一个可自动调整大小的动态数组。
-    - [ ] 介绍：
+    - [x] 介绍：
         - [数组（视频）](https://www.coursera.org/learn/data-structures/lecture/OsBSF/arrays)
         - [UC Berkeley CS61B - 线性数组和多维数组（视频）](https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE)（从15分32秒开始）
         - [数组的基础知识（视频）](https://archive.org/details/0102WhatYouShouldKnow/02_04-basicArrays.mp4)
@@ -504,72 +504,72 @@
         - [x] resize(new_capacity) // 私有函数
             - 若数组的大小到达其容积，则变大一倍
             - 获取元素后，若数组大小为其容积的1/4，则缩小一半
-    - [ ] 时间复杂度
+    - [x] 时间复杂度
         - 在数组末端增加/删除、定位、更新元素，只允许占 O(1) 的时间复杂度（平摊（amortized）去分配内存以获取更多空间）
         - 在数组任何地方插入/移除元素，只允许 O(n) 的时间复杂度
-    - [ ] 空间复杂度
+    - [x] 空间复杂度
         - 因为在内存中分配的空间邻近，所以有助于提高性能
         - 空间需求 = （大于或等于 n 的数组容积）* 元素的大小。即便空间需求为 2n，其空间复杂度仍然是 O(n)
 
 - ### 链表（Linked Lists）
-    - [ ] 介绍：
+    - [x] 介绍：
         - [ ] [单向链表（视频）](https://www.coursera.org/learn/data-structures/lecture/kHhgK/singly-linked-lists)
         - [ ] [CS 61B —— 链表（一）（视频）](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
         - [ ] [CS 61B —— 链表（二）（视频）](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
-    - [ ] [C 代码（视频）](https://www.youtube.com/watch?v=QN6FPiD0Gzo) ── 并非看完整个视频，只需要看关于节点结构和内存分配那一部分即可
-    - [ ] 链表 vs 数组：
+    - [x] [C 代码（视频）](https://www.youtube.com/watch?v=QN6FPiD0Gzo) ── 并非看完整个视频，只需要看关于节点结构和内存分配那一部分即可
+    - [x] 链表 vs 数组：
         - [基本链表 Vs 数组（视频）](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-linked-lists-vs-arrays-rjBs9)
         - [在现实中，链表 Vs 数组（视频）](https://www.coursera.org/lecture/data-structures-optimizing-performance/in-the-real-world-lists-vs-arrays-QUaUd)
-    - [ ] [为什么你需要避免使用链表（视频）](https://www.youtube.com/watch?v=YQs6IC-vgmo)
+    - [x] [为什么你需要避免使用链表（视频）](https://www.youtube.com/watch?v=YQs6IC-vgmo)
     - [ ] 的确：你需要关于“指向指针的指针”的相关知识：（因为当你传递一个指针到一个函数时，该函数可能会改变指针所指向的地址）该页只是为了让你了解“指向指针的指针”这一概念。但我并不推荐这种链式遍历的风格。因为，这种风格的代码，其可读性和可维护性太低。
         - [指向指针的指针](https://www.eskimo.com/~scs/cclass/int/sx8.html)
-    - [ ] 实现（我实现了使用尾指针以及没有使用尾指针这两种情况）：
-        - [ ] size() —— 返回链表中数据元素的个数
-        - [ ] empty() —— 若链表为空则返回一个布尔值 true
-        - [ ] value_at(index) —— 返回第 n 个元素的值（从0开始计算）
-        - [ ] push_front(value) —— 添加元素到链表的首部
-        - [ ] pop_front() —— 删除首部元素并返回其值
-        - [ ] push_back(value) —— 添加元素到链表的尾部
-        - [ ] pop_back() —— 删除尾部元素并返回其值
-        - [ ] front() —— 返回首部元素的值
-        - [ ] back() —— 返回尾部元素的值
-        - [ ] insert(index, value) —— 插入值到指定的索引，并把当前索引的元素指向到新的元素
-        - [ ] erase(index) —— 删除指定索引的节点
-        - [ ] value_n_from_end(n) —— 返回倒数第 n 个节点的值
-        - [ ] reverse() —— 逆序链表
-        - [ ] remove_value(value) —— 删除链表中指定值的第一个元素
-    - [ ] 双向链表
+    - [x] 实现（我实现了使用尾指针以及没有使用尾指针这两种情况）：
+        - [x] size() —— 返回链表中数据元素的个数
+        - [x] empty() —— 若链表为空则返回一个布尔值 true
+        - [x] value_at(index) —— 返回第 n 个元素的值（从0开始计算）
+        - [x] push_front(value) —— 添加元素到链表的首部
+        - [x] pop_front() —— 删除首部元素并返回其值
+        - [x] push_back(value) —— 添加元素到链表的尾部
+        - [x] pop_back() —— 删除尾部元素并返回其值
+        - [x] front() —— 返回首部元素的值
+        - [x] back() —— 返回尾部元素的值
+        - [x] insert(index, value) —— 插入值到指定的索引，并把当前索引的元素指向到新的元素
+        - [x] erase(index) —— 删除指定索引的节点
+        - [x] value_n_from_end(n) —— 返回倒数第 n 个节点的值
+        - [x] reverse() —— 逆序链表
+        - [x] remove_value(value) —— 删除链表中指定值的第一个元素
+    - [x] 双向链表
         - [介绍（视频）](https://www.coursera.org/learn/data-structures/lecture/jpGKD/doubly-linked-lists)
         - 并不需要实现
 
 - ### 堆栈（Stack）
-    - [ ] [堆栈（视频）](https://www.coursera.org/learn/data-structures/lecture/UdKzQ/stacks)
-    - [ ] [使用堆栈 —— 后进先出（视频）](https://archive.org/details/0102WhatYouShouldKnow/05_01-usingStacksForLast-inFirst-out.mp4)
-    - [ ] 可以不实现，因为使用数组来实现并不重要
+    - [x] [堆栈（视频）](https://www.coursera.org/learn/data-structures/lecture/UdKzQ/stacks)
+    - [x] [使用堆栈 —— 后进先出（视频）](https://archive.org/details/0102WhatYouShouldKnow/05_01-usingStacksForLast-inFirst-out.mp4)
+    - [x] 可以不实现，因为使用数组来实现并不重要
 
 - ### 队列（Queue）
-    - [ ] [使用队列 —— 先进先出（视频）](https://archive.org/details/0102WhatYouShouldKnow/05_03-usingQueuesForFirst-inFirst-out.mp4)
-    - [ ] [队列（视频）](https://www.coursera.org/learn/data-structures/lecture/EShpq/queue)
-    - [ ] [原型队列/先进先出（FIFO）](https://en.wikipedia.org/wiki/Circular_buffer)
-    - [ ] [优先级队列（视频）](https://archive.org/details/0102WhatYouShouldKnow/05_04-priorityQueuesAndDeques.mp4)
-    - [ ] 使用含有尾部指针的链表来实现:
+    - [x] [使用队列 —— 先进先出（视频）](https://archive.org/details/0102WhatYouShouldKnow/05_03-usingQueuesForFirst-inFirst-out.mp4)
+    - [x] [队列（视频）](https://www.coursera.org/learn/data-structures/lecture/EShpq/queue)
+    - [x] [原型队列/先进先出（FIFO）](https://en.wikipedia.org/wiki/Circular_buffer)
+    - [x] [优先级队列（视频）](https://archive.org/details/0102WhatYouShouldKnow/05_04-priorityQueuesAndDeques.mp4)
+    - [x] 使用含有尾部指针的链表来实现:
         - enqueue(value) —— 在尾部添加值
         - dequeue() —— 删除最早添加的元素并返回其值（首部元素）
         - empty()
-    - [ ] 使用固定大小的数组实现：
+    - [x] 使用固定大小的数组实现：
         - enqueue(value) —— 在可容的情况下添加元素到尾部
         - dequeue() —— 删除最早添加的元素并返回其值
         - empty()
         - full()
-    - [ ] 花销：
+    - [x] 花销：
         - 在糟糕的实现情况下，使用链表所实现的队列，其入列和出列的时间复杂度将会是 O(n)。因为，你需要找到下一个元素，以致循环整个队列
         - enqueue：O(1)（平摊（amortized）、链表和数组 [探测（probing）]）
         - dequeue：O(1)（链表和数组）
         - empty：O(1)（链表和数组）
 
 - ### 哈希表（Hash table）
-    - [ ] 视频：
-        - [ ] [链式哈希表（视频）](https://www.youtube.com/watch?v=0M_kIqhwbFo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=8)
+    - [x] 视频：
+        - [x] [链式哈希表（视频）](https://www.youtube.com/watch?v=0M_kIqhwbFo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=8)
         - [ ] [Table Doubling 和 Karp-Rabin（视频）](https://www.youtube.com/watch?v=BRO7mVIFt08&index=9&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
         - [ ] [Open Addressing 和密码型哈希（Cryptographic Hashing）（视频）](https://www.youtube.com/watch?v=rvdJDijO2Ro&index=10&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
         - [ ] [PyCon 2010：The Mighty Dictionary（视频）](https://www.youtube.com/watch?v=C4Kc8xzcA68)
@@ -598,10 +598,10 @@
 ## 更多的知识
 
 - ### 二分查找（Binary search）
-    - [ ] [二分查找（视频）](https://www.youtube.com/watch?v=D5SrAga1pno)
-    - [ ] [二分查找（视频）](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
-    - [ ] [详情](https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/)
-    - [ ] 实现：
+    - [x] [二分查找（视频）](https://www.youtube.com/watch?v=D5SrAga1pno)
+    - [x] [二分查找（视频）](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
+    - [x] [详情](https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/)
+    - [x] 实现：
         - 二分查找（在一个已排序好的整型数组中查找）
         - 迭代式二分查找
 
